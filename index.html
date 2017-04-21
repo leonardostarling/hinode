@@ -4,14 +4,13 @@
         <script type="text/javascript">
             function LoadPage(){
                 
-                //var ids = ["2102063", "2731814", "2945506", "2624874", "2102063"];
+                var ids = ["2102063", "2731814", "2945506", "2624874", "2102063"];
                 
-                //var rand = Math.round(Math.random()*(ids.length-1));
-                //var selectedId = ids[parseInt(rand)];
-                //var endereco = "https://vo2.hinode.com.br/cadastro/" + selectedId;
-                
+                var rand = Math.round(Math.random()*(ids.length-1));
+                var selectedId = ids[parseInt(rand)];
+                var endereco = "https://vo2.hinode.com.br/cadastro/" + selectedId;                
                 document.getElementById('content1').src = "https://thaiseleonardo.wixsite.com/hinode/instrucoes";
-                document.getElementById('content2').src = "https://thaiseleonardo.wixsite.com/hinode/instrucoes";
+                document.getElementById('content2').src = "https://vo2.hinode.com.br/cadastro/";
                 
             }
         </script>        
