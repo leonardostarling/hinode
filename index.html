@@ -1,23 +1,26 @@
-<html>
-    <head>
+<html>    
+    
+    <head>        
         <script type="text/javascript">
             function LoadPage(){
+                
                 var ids = ["2102063", "2731814", "2945506", "2624874", "2102063"];
+                
                 var rand = Math.round(Math.random()*(ids.length-1));
-                //document.write("Index = " + rand + "<br>");
                 var selectedId = ids[parseInt(rand)];
-                //document.write("Id = " + selectedId + "<br>");
                 var endereco = "https://vo2.hinode.com.br/cadastro/" + selectedId;
-                document.getElementById('content1').scr = "https://thaiseleonardo.wixsite.com/hinode/instrucoes";
-                //window.location.href = 'https://vo2.hinode.com.br/cadastro/'+selectedId;
-                //window.location.replace(endereco);
-                document.getElementById('content2').src = "https://vo2.hinode.com.br/cadastro/2102063";
+                
+                document.getElementById('content1').src = "http://www.google.com";
+                document.getElementById('content2').src = "http://www.bing.com";
+                
             }
-        </script>
-        <title></title>
+        </script>        
+        <title></title>        
     </head>
+    
     <frameset rows="35%,*" onload="LoadPage();">    
         <frame src="#" id="content1">    
         <frame src="#" id="content2">                
     </frameset>
+    
 </html>
