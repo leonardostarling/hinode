@@ -1,6 +1,26 @@
 <html>
-<frameset rows="30%,70%">
-<frame src="https://thaiseleonardo.wixsite.com/hinode/instrucoes" scrolling=yes>
-<frame src="/cad.html" scrolling=yes>
+<head>
+<script type="text/javascript">
+function LoadPage(){
+
+      var ids = ["2102063", "2731814", "2945506", "2624874", "2102063"];
+      var rand = Math.round(Math.random()*(ids.length-1));
+      //document.write("Index = " + rand + "<br>");
+      var selectedId = ids[parseInt(rand)];
+      //document.write("Id = " + selectedId + "<br>");
+      var endereco = "https://vo2.hinode.com.br/cadastro/" + selectedId;
+      //document.write(endereco + "<br>");
+      //window.location.href = 'https://vo2.hinode.com.br/cadastro/'+selectedId;
+      //window.location.replace(endereco);   
+  
+    document.getElementById('content1').src = "https://thaiseleonardo.wixsite.com/hinode/instrucoes";
+    document.getElementById('content2').src = endereco;
+}
+</script>
+<title></title>
+</head>
+<frameset rows="35%,*" onload="LoadPage();">    
+    <frame src="#" id="content1">    
+    <frame src="#" id="content2">                
 </frameset>
 </html>
